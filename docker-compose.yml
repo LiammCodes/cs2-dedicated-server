@@ -47,6 +47,7 @@ services:                                               # Add local console for 
     ports:
       - "27015:27015/tcp"
       - "27015:27015/udp"
+      - "28015:28015"
     networks:
       - cs2-network
     stdin_open: true                                    # Add local console for docker attach, docker attach --sig-proxy=false cs2-dedicated
